@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  credentials = {
+    email: '',
+    password: ''
+  }
 
+  showAlert = false
+  alertMsg = ""
+  alertColor = 'blue'
+
+  login(){
+    this.showAlert = true
+    this.alertMsg = "We're logging you in!"
+    this.alertColor = 'blue'
+  }
 }
